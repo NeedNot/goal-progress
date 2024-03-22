@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Progress bar</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="controls">
+      <label for="name">Name</label>
+      <input type="text" id="name" />
+      <label for="goal">Goal</label>
+      <input type="number" min="0" id="goal" />
+      <button id="add-goal">Add goal</button>
+    </div>
+    <div>
+      <label for="amount-earned">amount</label>
+      <input
+        style="width: 50px"
+        type="number"
+        name="value"
+        min="0"
+        id="amount-earned"
+      />
+    </div>
+    <div id="progress-bars">
+      <div class="progress-bar" id="progress-total">
+        <span class="title">Total progress</span>
+
+        <div class="bar">
+          <div class="progress"></div>
+          <span>0</span>
+          <span class="percent">0.00%</span>
+          <span class="goal">0</span>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js" async defer></script>
+  </body>
+</html>
